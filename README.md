@@ -17,8 +17,9 @@ Para instalar y ejecutar la API en tu entorno local, sigue estos pasos:
 1. Clona el repositorio en tu máquina local:
 git clone https://github.com/devecode/crud-fastAPI.git
 
-2. Navega al directorio del proyecto:
-3. Construye y ejecuta el contenedor Docker usando `docker-compose`:
+2. Navega al directorio del proyecto
+3. Poner la ruta de MongoDB Atlas en tu .env en MONGO_DETAILS: `mongodb+srv://<username>:<password>@cluster0.1cczvbi.mongodb.net/?retryWrites=true&w=majority&appName=<appName>`
+4. Construye y ejecuta el contenedor Docker usando `docker-compose`:
 docker-compose up -d --build
 
 Esto construirá la imagen Docker de tu aplicación (si no se ha construido antes) y luego iniciará el contenedor. 
