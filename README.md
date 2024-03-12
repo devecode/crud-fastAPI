@@ -1,47 +1,45 @@
-# API de Gestión de Usuarios con FastAPI
+# User Management API with FastAPI
 
-Este proyecto es una API de gestión de usuarios implementada con FastAPI. Permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre usuarios en una base de datos. La API está diseñada para ser rápida, eficiente y fácil de usar, aprovechando las ventajas de FastAPI, como la generación de documentación interactiva y la validación de datos.
+This project is a user management API implemented with FastAPI. It allows performing CRUD operations (Create, Read, Update, Delete) on users in a database. The API is designed to be fast, efficient, and easy to use, taking advantage of FastAPI's features like interactive documentation generation and data validation.
 
-## Comenzando
+## Getting Started
 
-Sigue estas instrucciones para obtener una copia del proyecto ejecutándose en tu máquina local para propósitos de desarrollo y prueba.
+Follow these instructions to get a copy of the project running on your local machine for development and testing purposes.
 
-### Prerrequisitos
+### Prerequisites
 
-Necesitarás tener Docker instalado en tu máquina. Si no lo tienes, sigue las instrucciones para instalar Docker en tu sistema operativo aquí: [Instalar Docker](https://docs.docker.com/get-docker/).
+You will need to have Docker installed on your machine. If you don't have it, follow the instructions to install Docker for your operating system here: [Install Docker](https://docs.docker.com/get-docker/).
 
-### Instalación
+### Installation
 
-Para instalar y ejecutar la API en tu entorno local, sigue estos pasos:
+To install and run the API on your local environment, follow these steps:
 
-1. Clona el repositorio en tu máquina local:
+1. Clone the repository to your local machine:
 git clone https://github.com/devecode/crud-fastAPI.git
 
-2. Navega al directorio del proyecto
-3. Poner la ruta de MongoDB Atlas en tu .env en MONGO_DETAILS: `mongodb+srv://<username>:<password>@cluster0.1cczvbi.mongodb.net/?retryWrites=true&w=majority&appName=<appName>`
-4. Construye y ejecuta el contenedor Docker usando `docker-compose`:
+2. Navigate to the project directory
+3. Set the MongoDB Atlas path in your .env at MONGO_DETAILS: `mongodb+srv://<username>:<password>@cluster0.1cczvbi.mongodb.net/?retryWrites=true&w=majority&appName=<appName>`
+4. Build and run the Docker container using `docker-compose`:
 docker-compose up -d --build
 
-Esto construirá la imagen Docker de tu aplicación (si no se ha construido antes) y luego iniciará el contenedor. 
+This will build your application's Docker image (if it hasn't been built before) and then start the container.
 
-4. Una vez que el contenedor está ejecutando, la API estará accesible en [http://localhost:8000](http://localhost:8000).
+4. Once the container is running, the API will be accessible at [http://localhost:8000](http://localhost:8000).
 
-### Uso
+### Usage
 
-Para comenzar a usar la API, puedes navegar a [http://localhost:8000/docs](http://localhost:8000/docs) en tu navegador web para acceder a la documentación interactiva de Swagger UI, donde podrás realizar peticiones directamente desde la interfaz.
+To start using the API, you can navigate to [http://localhost:8000/docs](http://localhost:8000/docs) in your web browser to access the Swagger UI interactive documentation, where you can make requests directly from the interface.
 
-### Desarrollo
+### Development
 
-Si deseas contribuir al proyecto o realizar modificaciones, aquí están los pasos recomendados para el desarrollo:
+If you want to contribute to the project or make modifications, here are the recommended steps for development:
 
-1. Asegúrate de tener todas las dependencias instaladas utilizando el entorno Docker.
-2. Realiza tus cambios en el código fuente.
-3. Para probar tus cambios localmente, utiliza `docker-compose up` para reconstruir y reiniciar los contenedores.
+1. Make sure you have all the dependencies installed using the Docker environment.
+2. Make your changes in the source code.
+3. To test your changes locally, use `docker-compose up` to rebuild and restart the containers.
 
-## Construido Con
+## Built With
 
-* [FastAPI](https://fastapi.tiangolo.com/) - El framework web usado.
-* [Docker](https://www.docker.com/) - Manejador de contenedores.
-* [MongoDB Atlas](https://cloud.mongodb.com//) - Manejador de base de datos NoSql.
-
-
+* [FastAPI](https://fastapi.tiangolo.com/) - The web framework used.
+* [Docker](https://www.docker.com/) - Container manager.
+* [MongoDB Atlas](https://cloud.mongodb.com//) - NoSql database manager.

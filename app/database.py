@@ -9,3 +9,4 @@ client = AsyncIOMotorClient(MONGO_DETAILS)
 database = client.prosperia
 
 user_collection = database.get_collection("users")
+movie_collection = database.get_collection("movies")
